@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: puzzle-bfs-backend
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    port: 8000
+    autoDeploy: false
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
